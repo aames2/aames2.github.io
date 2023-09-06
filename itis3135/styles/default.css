@@ -36,3 +36,9 @@ footer {
 header {
     text-align: center;
 }
+
+tagline {
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+}
