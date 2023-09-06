@@ -1,0 +1,27 @@
+body {
+    background-color: wheat
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+p {
+    font-family: helvetica;
+    font-size: 20px;
+}
+
+a {
+    color: orange
+}
+
+subtitle {
+    font-weight: bold;
+}
+
+
+
+ul {
+    list-style-type: disc;
+}
