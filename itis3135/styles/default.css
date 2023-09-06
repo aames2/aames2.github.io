@@ -11,6 +11,14 @@ h2 {
     text-align: center;
 }
 
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
 p {
     font-family: helvetica;
     font-size: 20px;
@@ -31,16 +39,7 @@ ul {
     list-style-type: circle;
 }
 
-footer {
-    text-align: center;
-}
-
-header {
-    text-align: center;
-}
-
 .tagline {
     color: gray;
     font-size: 15px;
-    text-align: center;
 }
