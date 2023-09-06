@@ -37,7 +37,7 @@ header {
     text-align: center;
 }
 
-tagline {
+tagline.p {
     color: gray;
     font-size: 10px;
     text-align: center;
