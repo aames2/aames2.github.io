@@ -20,8 +20,14 @@ subtitle {
     font-weight: bold;
 }
 
-
-
 ul {
-    list-style-type: disc;
+    list-style-type: circle;
+}
+
+footer {
+    text-align: center;
+}
+
+header {
+    text-align: center;
 }
