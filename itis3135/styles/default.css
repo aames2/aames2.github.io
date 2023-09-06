@@ -19,7 +19,8 @@ p {
 }
 
 a {
-    color: orange
+    color: orange;
+    text-decoration: none;
 }
 
 subtitle {
