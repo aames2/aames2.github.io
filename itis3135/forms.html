@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Ames's Awesome Alligator || ITIS 3135 Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <h1>Austin Ames's Awesome Alligator || ITIS 3135</h1>
+        <nav>
+            <a href="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">HTML Tables</a>
+            ||
+            <a href="forms.html">HTML Forms</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Forms</h2>
+        <form action="#">
+            <label for="fullname">Name:</label>
+            <input type="text" class="usertyping" id="fullname" name="fullname" required placeholder="Steve Smith"
+                maxlength="18"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" class="usertyping" id="phone" name="phone" required placeholder="Ex:(777)777-7777"><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" class="usertyping" id="email" name="email" required placeholder="name@example.com"
+                maxlength="20"><br>
+
+            <p style="font-size: medium;">Which of the following web languages do you use?</p>
+            <input type="checkbox" id="firstlang" name="firstlang" value="HTML">
+            <label for="firstlang">HTML</label>
+            <input type="checkbox" id="secondlang" name="secondlang" value="CSS">
+            <label for="secondlang">CSS</label>
+            <input type="checkbox" id="thirdlang" name="thirdlang" value="Java">
+            <label for="thirdlang">Java</label><br>
+
+            <p style="font-size: medium;">What kind of work do you prefer?</p>
+            <input type="radio" id="worktype" name="worktype" value="At home" required>
+            <label for="worktype">At home</label>
+            <input type="radio" id="worktype" name="worktype" value="In office">
+            <label for="worktype">In office</label>
+            <input type="radio" id="worktype" name="worktype" value="Hybrid">
+            <label for="worktype">Hybrid</label><br>
+
+            <label for="meal">What's the most important meal of the day?</label><br>
+            <select name="meal" id="meal">
+                <option value="breakfast">breakfast</option>
+                <option value="lunch">lunch</option>
+                <option value="dinner">dinner</optoin>
+                <option value="snackies">snackies(wrong answer)</option>
+
+            </select><br>
+            <br>
+            <input type="submit" class="newbutton" value="Submit">
+            <input type="reset" class="newbutton" value="Reset">
+        </form>
+        <br>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/aames2/">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/aames2/">Github</a>
+            ||
+            <a href="https://aames2.github.io/">Github.io</a>
+            ||
+            <a href="https://aames2.github.io/itis3135/">ITIS 3135 Github Pages</a>
+            ||
+            <a href="https://freecodecamp.org/aames2">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/aames2/">Codecademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/austin-ames-56751b18a">LinkedIn</a>
+            <hr>
+
+        </nav>
+        <p>Page Built by <a href="https://aames2.github.io/itis3135/amesenterprises.net/"> Ames Enterprises
+            </a>&copy; 2023</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS">
+        </a>
+        <p class="tagline">Keep Moving Forward</p>
+    </footer>
+</body>
+
+</html>

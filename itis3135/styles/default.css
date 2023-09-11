@@ -55,6 +55,17 @@ ul {
     list-style-type: circle;
 }
 
+.newbutton {
+    background-color: brown;
+    color: white;
+}
+
+.usertyping {
+    cursor: help;
+    color: white;
+    background-color: rgb(244, 110, 110);
+}
+
 .tagline {
     color: gray;
     font-size: 15px;
