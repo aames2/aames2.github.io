@@ -3,52 +3,104 @@
 <header>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc-->
     <style>
         body {
-            background-color: teal
+            background-color: #FDF0D5
+        }
+
+        header {
+            color: #780000;
+            text-align: center;
         }
 
         h1 {
-            color: blue;
-            text-align: center;
+            color: #C1121F;
+            text-align: left;
+            position: relative;
+            padding: 0px 0px 5px 0px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #669BBC;
+            text-align: left;
+        }
+
+        h3 {
+            border-width: 3px;
+            border-style: solid;
+            border-color: #669BBC;
+        }
+
+        p {
+            color: #003049;
+            font-variant: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .contact-info {
+            font-size: .7rem;
+            margin-left: 15px;
         }
 
         footer {
             text-align: center;
         }
 
-        header {
-            text-align: center;
+        .important {
+            color: #780000;
         }
 
-        h2 {
-            font-size: 1.5rem;
-            color: #2f8d46;
-            text-align: center;
-        }
-
-        p {
-            font-variant: italic;
-        }
-
-        tagline {
-            color: brown;
+        .tagline {
+            color: #C1121F;
             font-size: 10px;
             text-align: center;
         }
+
+        img {
+            float: right;
+            margin: -15px 35px 0 15px;
+            vertical-align: middle;
+        }
+
+        li {
+            padding-left: 1rem;
+            text-indent: -.7rem;
+            list-style-type: "\1F449";
+            color: #C1121F;
+        }
     </style>
-    <h1>Ames Enterprises - ITIS3135</h1>
+    <h1>Ames Enterprises - ITIS3135<img src=./ames-enterprises-logo.png width="100" height="auto" alt="logo"> </h1>
 </header>
 
 <main>
+    <h2>Ames Enterprises</h2>
+    <p>Here at Ames Enterprises we strive to provide you the best product available and are constantly working to
+        improve. We have example templates for use and we accept custom requests. Submit an interest ticket today!</p>
+    <ul>
+        <li>We have the best employees</li>
+        <li>Our ratings are excellent</li>
+        <li>Our prices are competitive</li>
+        <li>Constantly growing and expanding</li>
+        <li>24/7 Services</li>
+    </ul>
 
+    <h3>
+        <p class="contact-info">We would like to take your ideas and make them reality. We are always taking new
+            clients. We can be reached:<br>
+            Email us at: <span class="important">amesmailing@gmail.com</span><br>
+            Call us at <span class="important">(888)777-6666</span></span><br>
+            Come visit us at <span class="important">9201 University City Blvd, Charlotte, NC 28223</span></p>
+    </h3>
 </main>
 
 <hr class="bottom-line">
 
 <footer>
 
-    <tagline>"Keep Moving Forward"</tagline>
-    <p>Copyright - <a href="https://aames2.github.io/itis3135/amesenterprises.net/" target="_blank">Ames Enterprises
+    <p class="tagline">"Keep Moving Forward"</tagline>
+    <p><a href="https://aames2.github.io/itis3135/amesenterprises.net/" target="_blank">Ames Enterprises
         </a>&copy; 2023</p>
 </footer>
