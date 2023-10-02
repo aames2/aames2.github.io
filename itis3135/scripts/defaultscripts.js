@@ -27,12 +27,16 @@ function showPolygon() {
     let number = Math.round(Math.abs(favNumberElement.value));
     let polygon;
     switch (number) {
-        case 2: polygon = "Not a polygon"; break;
+        case 2: polygon = "Digon"; break;
         case 3: polygon = "Triangle"; break;
         case 4: polygon = "Quadrilateral"; break;
         case 5: polygon = "Pentagon"; break;
         case 6: polygon = "Hexagon"; break;
-        default: polygon = "Polygon";
+        case 7: polygon = "Heptagon"; break;
+        case 8: polygon = "Octagon"; break;
+        case 9: polygon = "Nonagon"; break;
+        case 10: polygon = "Decagon"; break;
+        default: polygon = "Many sided polygon";
     }
     alert(polygon);
 }
