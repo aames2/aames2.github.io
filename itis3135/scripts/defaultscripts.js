@@ -40,15 +40,15 @@ function showPolygon() {
     }
     alert(polygon);
 }
-function areWeThereYet() {
-    alert("No.");
+function seeYaLater() {
+    alert("Alligator");
 }
 function dumbJoke() {
-    alert("What kind of sandals do frogs prefer? Open toad.");
+    alert("What do you call an alligator holding a compass? A navigator");
 }
-function cowSound() {
-    alert("MOOOOO");
+function howLong() {
+    alert("Half its length is an alligator's tail but they can be up to half a ton (1000 pounds)");
 }
-function simpleMath() {
-    alert("2+2=4");
+function joke2() {
+    alert("Alligators can grow up to 15 feet...usually they just grow 4 of them.");
 }
