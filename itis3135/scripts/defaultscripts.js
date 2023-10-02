@@ -20,7 +20,7 @@ function greet() {
     inputName = document.getElementById('name').value;
     inputMood = document.getElementById('mood').value;
     greetingElement = document.getElementById('greeting');
-    greetingElement.innerText = "Welcome, ${inputName}. You're feeling ${inputMood} today?";
+    greetingElement.innerText = "Welcome, " + inputName + ". You're feeling " + inputMood + " today?";
 }
 function showPolygon() {
     favNumberElement = document.getElementById('fnumber');
