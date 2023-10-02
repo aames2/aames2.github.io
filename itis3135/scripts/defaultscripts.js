@@ -22,7 +22,7 @@ function greet() {
     greetingElement = document.getElementById('greeting');
     greetingElement.innerText = "Welcome, ${inputName}. You're feeling ${inputMood} today?";
 }
-function showPolygon{
+function showPolygon() {
     favNumberElement = document.getElementById('fnumber');
     let number = Math.round(Math.abs(favNumberElement.value));
     let polygon;
