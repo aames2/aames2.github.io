@@ -1,4 +1,4 @@
-function displayDateTime() {
+function displayCurrentDateTime() {
     const dateTimeElement = document.getElementById('dateTime');
     const now = new Date();
     const options = {
