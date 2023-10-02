@@ -1,11 +1,7 @@
-document.addEventListener('DOMContentLoaded', (envent) => {
-    displayCurrentDateTime();
-})
-
 function displayDateTime() {
-    dateTimeElement = document.getElementById('dateTime');
-    now = new Date();
-    options = {
+    const dateTimeElement = document.getElementById('dateTime');
+    const now = new Date();
+    const options = {
         weekday: 'long',
         year: 'numeric',
         month: 'long',
@@ -16,6 +12,9 @@ function displayDateTime() {
     };
     dateTimeElement.innerText = now.toLocaleString('en-US', options);
 }
+document.addEventListener('DOMContentLoaded', (event) => {
+    displayCurrentDateTime();
+})
 function greet() {
     inputName = document.getElementById('name').value;
     inputMood = document.getElementById('mood').value;
