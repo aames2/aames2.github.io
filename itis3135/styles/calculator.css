@@ -1,0 +1,54 @@
+.calculator {
+    display: grid;
+    width: 240px;
+    grid-template-rows: auto 1fr;
+}
+
+.display {
+    background-color: #333;
+    padding: 20px;
+}
+
+input[name="textNumber"] {
+    width: 100%;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 column */
+    grid-template-rows: repeat(4, 1fr);
+    /* 4 rows */
+    gap: 2px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.operator {
+    background-color: #eee;
+}
+
+.equals {
+    grid-row: 2 / 6;
+    /* span top top */
+    background-color: #ff7f50;
+}
+
+.clear {
+    background-color: #eee;
+}
