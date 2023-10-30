@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Ames's Awesome Alligator || ITIS 3135 Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+
+    <main>
+        <h2>Salary javascript using arrays</h2>
+        <p>This page will allow the user to input their name and salary. Those 2 fields will then send the submitted
+            data
+            into seperate arrays which can then be pulled and displayed with the display buttons. One button will show
+            the average salary and highest salary from the array's list of inputs. The other button will show a table
+            listing all names and salaries that were input into the arrays.</p>
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary">
+            <button onclick="addSalary()">Add Salary</button>
+        </div>
+
+        <div>
+            <button onclick="displayResults()">Display Results</button>
+            <div id="results"></div>
+        </div>
+
+        <div>
+            <button onclick="displaySalary()">Display Salary</button>
+            <table id="results_table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+
+</html>
