@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Hailey's Crochet Creations</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+
+    <main>
+        <h1>Contact Hailey</h1>
+        <p>If you have any questions, please feel free to drop me a message. I'd love to hear from you!</p>
+
+        <!-- Contact Form -->
+        <section id="contact-form">
+            <!-- find out if making an input for server script is possible or not worth it-->
+            <form action="your-server-side-script" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <!--also test if it works-->
+            </form>
+        </section>
+
+        <!-- Additional Contact Info -->
+        <section id="additional-contact">
+            <h2>Other Ways to Reach Me</h2>
+            <p>Email: <a href="mailto:hailey@crochetcreations.com">hailey@crochetcreations.com</a></p>
+            <!-- phone number, address, or social media? -->
+        </section>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+
+</html>
