@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board Game Bliss</title>
+    <title>Board Game Hobby</title>
     <style>
         :root {
             /* color scheme */
@@ -62,6 +62,8 @@
             background-color: var(--secondary-color);
             height: 50px;
             /* fixed height for navbar */
+            flex-wrap: wrap;
+            /* last item kept falling off mobile */
         }
 
         nav ul li {
@@ -140,6 +142,21 @@
         figcaption {
             margin-top: 8px;
             /* between image and caption */
+        }
+
+        /* media styling from fcc */
+        @media screen and (max-width: 768px) {
+            nav ul li a {
+                padding: 10px 8px;
+                margin: 0 5px;
+            }
+
+            @media screen and (max-width: 768px) {
+                nav ul li a {
+                    font-size: 0.9em;
+                }
+            }
+
         }
     </style>
 </head>
