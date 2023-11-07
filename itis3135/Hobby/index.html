@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Bliss</title>
+    <style>
+        :root {
+            /* color scheme */
+            --primary-color: #6d597a;
+            /* purple */
+            --secondary-color: #355070;
+            /* blue */
+            --accent-color: #eaac8b;
+            /* orange */
+            --light-color: #f2e8cf;
+            /* peach */
+            --text-color: #333;
+            /* dark grey */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--light-color);
+            color: var(--text-color);
+        }
+
+        header,
+        footer,
+        main,
+        section,
+        figure,
+        figcaption {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            /* round corners? */
+        }
+
+        h1,
+        h2 {
+            color: var(--primary-color);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            /* center nav horizontal */
+            align-items: center;
+            /* center nav items vert */
+            background-color: var(--secondary-color);
+            height: 50px;
+            /* fixed height for navbar */
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            /* flexbox to center */
+            align-items: center;
+            /* center vert */
+            height: 100%;
+            /* height to align text vertically */
+            box-sizing: border-box;
+            /* for padding height? */
+            transition: background-color 0.3s;
+            /* transition for hover */
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background-color: var(--accent-color);
+            outline: none;
+        }
+
+        /* only the home section by default */
+        main>section {
+            display: none;
+        }
+
+        main>section#home {
+            display: block;
+        }
+
+        .validation-button {
+            padding: 10px 15px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            /* transition for hover effect */
+            margin-top: 10px;
+        }
+
+        .validation-button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            /* round corner on image */
+        }
+
+        figure {
+            text-align: center;
+            /* center figure and caption */
+        }
+
+        figcaption {
+            margin-top: 8px;
+            /* between image and caption */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hobby: Board Games</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#schedule" class="nav-link">Game Nights</a></li>
+            <li><a href="#locations" class="nav-link">Where We Play</a></li>
+            <li><a href="#how-to-play" class="nav-link">How to Play</a></li>
+            <li><a href="#why-play" class="nav-link">Why Play Board Games</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Board</h2>
+            <p>Discover the joy of board games.</p>
+            <figure>
+                <img src="images/wizwar.png" alt="Board Game Setup" style="width:100%;height:auto;">
+                <figcaption>A popular board game, Wiz-War setup.</figcaption>
+            </figure>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>My friends and I are group of board game enthusiasts who love to spend freetime playing games we enjoy
+                and learning new ones.</p>
+            <figure>
+                <img src="images/about.jpg" alt="Our Board Game Group" style="width:100%;height:auto;">
+                <figcaption>Our happy gaming group in action.</figcaption>
+            </figure>
+        </section>
+        <section id="schedule">
+            <h2>Game Nights</h2>
+            <p>We typically play at someone's house on a chosen weeknight or at local board game shops in evenings. Many
+                of these shops have schedules for pre-arranged events such as Dungeons & Dragons Wednesdays, Crisis
+                Protcol Thursdays, Magic
+                the Gathering Fridays, Board Games on weekends, etc.</p>
+            <figure>
+                <img src="images/schedule.png" alt="Game Night Schedule" style="width:100%;height:auto;">
+                <figcaption>Local hobby shop (the Mighty Meeple) calendar with game sessions for those looking to plan
+                    ahead.</figcaption>
+            </figure>
+        </section>
+        <section id="locations">
+            <h2>Where We Play</h2>
+            <p>From cozy living rooms to spacious game shop play spaces, we play everywhere. Beer and pretzels are often
+                a nice snack to enjoy while playing games and our favorite shop has many drinks and snacks to choose
+                from.</p>
+            <figure>
+                <img src="images/meepleplayspace.jpg" alt="Board Game Locations" style="width:100%;height:auto;">
+                <figcaption>The Mighty Meeple play space. One of our favorite gaming locations.</figcaption>
+            </figure>
+        </section>
+        <section id="how-to-play">
+            <h2>How to Play</h2>
+            <p>Just getting started or have been playing games for years, there's always a new game to learn. Many
+                people who play and shops who sell, will sit down and explain to new players how to play games they are
+                interested in, or recommend options for what they are looking for. All you have
+                to do is ask.</p>
+            <figure>
+                <img src="images/rulebook.png" alt="Evolution Board Game Rulebook">
+                <figcaption>Rulebook for the game Evolution. <a
+                        href="https://cdn.1j1ju.com/medias/b2/96/cd-evolution-rulebook.pdf" target="_blank">Source</a>.
+                </figcaption>
+            </figure>
+        </section>
+        <section id="why-play">
+            <h2>Why Play Board Games</h2>
+            <p>Digital screens often dominate our attention, board games provide a way to connect without internet and
+                brings people together for strategy, and laughter. Beyond being a fun way to spend
+                an evening, board games challenge our minds, encourage strategic thinking, and supports social
+                interaction
+                and teamwork. Some are even based on creativity, where each game is a unique playthrough and different
+                ending.</p>
+            <p>Playing board games isn't just a pastime; it's a way to meet new people or connect with friends.
+                Everybody loves winning, but sometimes crazy turns, or unexpected defeats are sufficient. It is also one
+                of the few ways for face-to-face interaction nowadays.
+            <p>Our group has been playing together for many years and we have created so many memorable moments. Board
+                games also teach us some important real-life skills like patience, negotiation, and how to win or lose
+                gracefully.</p>
+            <figure>
+                <img src="images/friends.jpg" alt="Friends from Board Games" style="width:100%;height:auto;">
+                <figcaption>While this picture is from our new years party, most of these people I met and have stayed
+                    connected with from board games or card games. Even at this party, we started the night with games.
+                    This photo is from after our college graduations, showing that we have remained connected even after
+                    college.
+                    Many of these people went to different colleges and
+                    live in
+                    different places now but we remain friends and get together for games when we can.</figcaption>
+            </figure>
+        </section>
+        <script>
+            // Wait until the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all navigation links
+                var links = document.querySelectorAll('.nav-link');
+
+                // Add click event to each link
+                links.forEach(function (link) {
+                    link.addEventListener('click', function (e) {
+                        // Prevent the default anchor behavior
+                        e.preventDefault();
+
+                        // Get all sections and hide them
+                        document.querySelectorAll('main > section').forEach(function (section) {
+                            section.style.display = 'none';
+                        });
+
+                        // Get the href attribute of the clicked link
+                        var target = link.getAttribute('href');
+
+                        // Find the corresponding section and show it
+                        document.querySelector(target).style.display = 'block';
+                    });
+                });
+            });
+        </script>
+
+        <footer>
+            <a href="https://validator.w3.org/" class="validation-button">HTML Validation</a>
+            <a href="https://jigsaw.w3.org/css-validator/" class="validation-button">CSS Validation</a>
+            <a href="../index.html" class="validation-button">Design by MyDesignFirm</a>
+        </footer>
+    </main>
+</body>
+
+</html>
