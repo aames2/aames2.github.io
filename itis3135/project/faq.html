@@ -11,6 +11,7 @@
 <body>
     <div data-include="components/header.html"></div>
     <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/script.js"></script>
 
     <main>
         <h1>Frequently Asked Questions</h1>
@@ -18,26 +19,29 @@
         <!-- FAQ Section -->
         <section id="faqs">
             <article class="faq">
-                <h2>How do I place an order?</h2>
-                <p>To place an order, you can use the contact form on our website or email us directly at
+                <h2 onclick="toggleFaq(event)">How do I place an order?</h2>
+                <p class="hidden">To place an order, you can use the contact form on our website or email us directly at
                     hailey@crochetcreations.com with details of the item you'd like to purchase.</p>
             </article>
 
             <article class="faq">
-                <h2>What payment methods do you accept?</h2>
-                <p>We accept payments through PayPal, credit/debit card, and bank transfers. All transactions are secure
+                <h2 onclick="toggleFaq(event)">What payment methods do you accept?</h2>
+                <p class="hidden">We accept payments through PayPal, credit/debit card, and bank transfers. All
+                    transactions are secure
                     and encrypted.</p>
             </article>
 
             <article class="faq">
-                <h2>Can I request a custom design?</h2>
-                <p>Absolutely! We love creating custom designs. Please contact us with your ideas, and we'll work with
+                <h2 onclick="toggleFaq(event)">Can I request a custom design?</h2>
+                <p class="hidden">Absolutely! We love creating custom designs. Please contact us with your ideas, and
+                    we'll work with
                     you to make them a reality.</p>
             </article>
 
             <article class="faq">
-                <h2>How should I care for my crochet items?</h2>
-                <p>Each crochet item comes with its own set of care instructions. Generally, we recommend hand-washing
+                <h2 onclick="toggleFaq(event)">How should I care for my crochet items?</h2>
+                <p class="hidden">Each crochet item comes with its own set of care instructions. Generally, we recommend
+                    hand-washing
                     in cold water and laying flat to dry to maintain the shape and quality.</p>
             </article>
 

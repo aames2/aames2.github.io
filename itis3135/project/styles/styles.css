@@ -126,3 +126,11 @@ footer a {
 footer a:hover {
     color: #BB8588;
 }
+
+.hidden {
+    display: none;
+}
+
+.faq h2 {
+    cursor: pointer;
+}
