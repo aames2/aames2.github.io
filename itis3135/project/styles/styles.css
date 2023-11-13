@@ -16,6 +16,7 @@ body {
     background-color: #EFEBCE;
     color: #36454F;
     line-height: 1.6;
+    padding-bottom: 50px;
 }
 
 a {
@@ -112,10 +113,15 @@ cite {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #D8A48F;
     padding: 15px 0;
     text-align: center;
 }
+
 
 footer a {
     color: #EFEBCE;
