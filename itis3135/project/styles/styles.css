@@ -122,7 +122,6 @@ footer {
     text-align: center;
 }
 
-
 footer a {
     color: #EFEBCE;
     margin: 0 5px;
@@ -144,124 +143,76 @@ footer a:hover {
 /* Dark mode styles */
 .dark-mode {
     background-color: #1A1A1A;
-    color: #FAFAFA;
+    color: #E8E6E3;
 }
 
-.dark-mode a {
-    color: #9AD0F5;
+.dark-mode header,
+.dark-mode footer {
+    background-color: #2A2C2B;
 }
 
-.dark-mode header {
-    background-color: #333;
+.dark-mode nav a,
+.dark-mode footer a {
+    color: #C5C3C0;
 }
 
-.dark-mode header h1 {
-    color: #FAFAFA;
+.dark-mode nav a:hover,
+.dark-mode footer a:hover {
+    color: #F8E9A1;
 }
 
-.dark-mode nav a {
-    color: #9AD0F5;
-}
-
-.dark-mode nav a:hover {
-    color: #F5A9B8;
-}
-
-.dark-mode #intro {
-    background-color: #444;
-}
-
-.dark-mode #intro p {
-    color: #FAFAFA;
+.dark-mode #intro,
+.dark-mode #testimonials {
+    background-color: #333333;
 }
 
 .dark-mode .item img {
-    border-color: #444;
+    border-color: #333333;
 }
 
 .dark-mode .item img:hover {
-    border-color: #F5A9B8;
+    border-color: #F8E9A1;
 }
 
 .dark-mode .item p {
-    color: #FAFAFA;
-}
-
-.dark-mode #testimonials {
-    background-color: #555;
-}
-
-.dark-mode footer {
-    background-color: #333;
-}
-
-.dark-mode footer a {
-    color: #9AD0F5;
-}
-
-.dark-mode footer a:hover {
-    color: #F5A9B8;
+    color: #E8E6E3;
 }
 
 @media (prefers-color-scheme: dark) {
     .dark-mode {
         background-color: #1A1A1A;
-        color: #FAFAFA;
+        color: #E8E6E3;
     }
 
-    .dark-mode a {
-        color: #9AD0F5;
+    .dark-mode header,
+    .dark-mode footer {
+        background-color: #2A2C2B;
     }
 
-    .dark-mode header {
-        background-color: #333;
+    .dark-mode nav a,
+    .dark-mode footer a {
+        color: #C5C3C0;
     }
 
-    .dark-mode header h1 {
-        color: #FAFAFA;
+    .dark-mode nav a:hover,
+    .dark-mode footer a:hover {
+        color: #F8E9A1;
     }
 
-    .dark-mode nav a {
-        color: #9AD0F5;
-    }
-
-    .dark-mode nav a:hover {
-        color: #F5A9B8;
-    }
-
-    .dark-mode #intro {
-        background-color: #444;
-    }
-
-    .dark-mode #intro p {
-        color: #FAFAFA;
+    .dark-mode #intro,
+    .dark-mode #testimonials {
+        background-color: #333333;
     }
 
     .dark-mode .item img {
-        border-color: #444;
+        border-color: #333333;
     }
 
     .dark-mode .item img:hover {
-        border-color: #F5A9B8;
+        border-color: #F8E9A1;
     }
 
     .dark-mode .item p {
-        color: #FAFAFA;
-    }
-
-    .dark-mode #testimonials {
-        background-color: #555;
-    }
-
-    .dark-mode footer {
-        background-color: #333;
-    }
-
-    .dark-mode footer a {
-        color: #9AD0F5;
-    }
-
-    .dark-mode footer a:hover {
-        color: #F5A9B8;
+        color: #E8E6E3;
     }
 }
