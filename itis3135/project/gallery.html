@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Hailey's Crochet Creations</title>
+    <link rel="preload" href="styles/styles.css" as="style">
     <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+
+        function toggleDarkMode() {
+            var isDarkMode = document.documentElement.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+    </script>
 </head>
 
 <body>
     <div data-include="components/header.html"></div>
     <script src="scripts/HTMLInclude.js"></script>
+
 
     <main>
         <h1>Gallery</h1>
