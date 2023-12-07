@@ -175,7 +175,7 @@ footer a:hover {
 }
 
 .dark-mode .item p {
-    color: #E8E6E3;
+    color: #444444;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -213,6 +213,6 @@ footer a:hover {
     }
 
     .dark-mode .item p {
-        color: #E8E6E3;
+        color: #444444;
     }
 }
